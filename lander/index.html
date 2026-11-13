@@ -16,7 +16,7 @@
     .urgency{display:inline-flex;align-items:center;gap:7px;margin:0 auto 16px;padding:8px 12px;border-radius:999px;background:rgba(242,24,50,.12);border:1px solid rgba(242,24,50,.28);color:#ff8f9c;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;position:relative;z-index:1}
     h1{font-size:clamp(32px,8.7vw,43px);line-height:1.05;letter-spacing:-.05em;text-align:center;margin:0 0 12px;position:relative;z-index:1}.accent{color:#ff485c}.subtext{max-width:395px;margin:0 auto 18px;text-align:center;font-size:14px;line-height:1.55;color:var(--muted);position:relative;z-index:1}
     .proof-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;position:relative;z-index:1}.proof{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:14px 10px;text-align:center}.proof strong{display:block;font-size:15px;margin-bottom:4px}.proof span{font-size:11px;line-height:1.35;color:var(--muted)}
-    .cta-wrap{position:sticky;bottom:12px;z-index:20;margin-top:16px}.cta{display:flex;align-items:center;justify-content:center;gap:12px;background:linear-gradient(180deg,#ff2842 0%, #d11124 100%);border-radius:22px;padding:16px 18px;box-shadow:0 18px 40px rgba(242,24,50,.35);border:1px solid rgba(255,255,255,.08)}.cta-icons{display:flex;align-items:center;gap:8px;background:rgba(0,0,0,.18);padding:10px 11px;border-radius:14px;min-width:58px;justify-content:center}.cta-icons span{font-size:18px;line-height:1}.cta-copy{display:flex;flex-direction:column;align-items:flex-start}.cta-copy strong{font-size:18px;line-height:1.15;font-weight:900;letter-spacing:-.03em}.cta-copy small{font-size:12px;color:rgba(255,255,255,.8);font-weight:700}.cta-note{text-align:center;color:#b9bfdc;font-size:12px;line-height:1.45;margin:10px 0 0}.cta-note strong{color:#fff}
+    .cta-wrap{position:sticky;bottom:12px;z-index:20;margin-top:16px}.cta{display:flex;align-items:center;justify-content:center;gap:12px;background:linear-gradient(180deg,#ff2842 0%, #d11124 100%);border-radius:22px;padding:16px 18px;box-shadow:0 18px 40px rgba(242,24,50,.35);border:1px solid rgba(255,255,255,.08)}.cta-copy{display:flex;flex-direction:column;align-items:center;text-align:center}.cta-copy strong{font-size:23px;line-height:1.15;font-weight:900;letter-spacing:-.03em}.cta-copy small{font-size:13px;color:rgba(255,255,255,.8);font-weight:700}.cta-note{text-align:center;color:#b9bfdc;font-size:12px;line-height:1.45;margin:10px 0 0}.cta-note strong{color:#fff}
     .strip{margin:16px 0;background:linear-gradient(180deg,rgba(242,24,50,.11),rgba(242,24,50,.05));border:1px solid rgba(242,24,50,.25);color:#f4d4d8;border-radius:18px;padding:14px 15px;font-size:13px;line-height:1.5}.strip strong{color:#fff}
     .section-title{margin:18px 0 10px;text-align:center;font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:#5b648f}
     .offers{display:grid;gap:12px}.offer{display:grid;grid-template-columns:60px 1fr auto;align-items:center;gap:14px;padding:14px;border-radius:22px;background:linear-gradient(135deg,#121742 0%, #0f1735 45%, #0d231f 100%);border:1.5px solid var(--greenLine);box-shadow:0 0 22px rgba(24,243,138,.08), var(--shadow)}.offer:not(.main){background:linear-gradient(135deg,#15193c,#101436);border-color:rgba(24,243,138,.38)}
@@ -24,7 +24,7 @@
     .price{text-align:right;min-width:88px}.price strong{display:block;font-size:15px;line-height:1.1;color:var(--green);font-weight:900}.price span{display:block;margin-top:5px;font-size:11px;color:#ffd36f;font-weight:800}.price small{display:block;margin-top:3px;font-size:10px;color:#9ea7d2}
     .steps{margin-top:12px;background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:12px;box-shadow:var(--shadow)}.step{display:grid;grid-template-columns:42px 1fr;gap:12px;align-items:start;padding:12px;border-radius:18px;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05)}.step + .step{margin-top:10px}.step-num{width:42px;height:42px;border-radius:14px;background:rgba(242,24,50,.16);color:#ff5470;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:16px}.step h4{margin:0 0 4px;font-size:16px;line-height:1.25}.step p{margin:0;color:var(--muted);font-size:13px;line-height:1.55}
     footer{padding:18px 2px 0;text-align:center;color:#7f88b3;font-size:11px;line-height:1.6}footer a{color:#c8cdeb;text-decoration:none}.legal{margin-top:10px;padding:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:14px}
-    @media(max-width:420px){.proof-row{grid-template-columns:1fr}.offer{grid-template-columns:56px 1fr auto}.price{min-width:80px}.cta-copy strong{font-size:17px}}
+    @media(max-width:420px){.proof-row{grid-template-columns:1fr}.offer{grid-template-columns:56px 1fr auto}.price{min-width:80px}.cta-copy strong{font-size:21px}}
   </style>
 </head>
 <body>
@@ -48,8 +48,7 @@
     </section>
 
     <div class="cta-wrap">
-      <a class="cta" id="offerButton" href="https://taprkr.com/r/eyJ0IjoiZW1wZm9obGVuIiwidGlkIjoiYWU3Yzk0M2E5MGM1ZmM3M2E1NWUiLCJ0cyI6MTc5NDM4MDkyODkwM30" target="_blank" rel="noopener noreferrer sponsored">
-        <div class="cta-icons"><span></span><span>🤖</span></div>
+      <a class="cta" id="offerButton" href="https://taprkr.com/r/eyJ0IjoiZW1wZm9obGVuIiwidGlkIjoiYWU3Yzk0M2E5MGM1ZmM3M2E1NWUiLCJ0cyI6MTc5NDU4ODE0NDgwMH0" target="_blank" rel="noopener noreferrer sponsored">
         <div class="cta-copy">
           <strong>Jetzt starten und Prämien entdecken</strong>
           <small>iOS und Android — kostenlose Registrierung</small>
@@ -102,7 +101,7 @@
     </footer>
   </div>
   <script>
-    const OFFER_URL = 'https://taprkr.com/r/eyJ0IjoiZW1wZm9obGVuIiwidGlkIjoiYWU3Yzk0M2E5MGM1ZmM3M2E1NWUiLCJ0cyI6MTc5NDM4MDkyODkwM30';
+    const OFFER_URL = 'https://taprkr.com/r/eyJ0IjoiZW1wZm9obGVuIiwidGlkIjoiYWU3Yzk0M2E5MGM1ZmM3M2E1NWUiLCJ0cyI6MTc5NDU4ODE0NDgwMH0';
     document.getElementById('offerButton').href = OFFER_URL;
   </script>
 </body>
